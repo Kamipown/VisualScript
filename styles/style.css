@@ -15,4 +15,4 @@ a { text-decoration: none;}
 #main_div { display: inline-block; vertical-align: top; height: 100%; width: calc(100% - 400px); overflow: auto;}
 	#grid { display: block; position: relative; margin: 20px; border-top: 1px solid #ddd; border-left: 1px solid #ddd;}
 		#grid > .cell {display: inline-block; vertical-align: top; box-sizing: border-box; width: 40px; height: 40px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;}
-		#grid > .robot { display: block; position: absolute; width: 40px; height: 40px; background-image: url("../img/robot.png");}
+		#grid > .robot { display: block; position: absolute; width: 40px; height: 40px; background-image: url("../img/robot.png"); transition: all 100ms;}

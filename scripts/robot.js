@@ -4,6 +4,7 @@ function Robot()
 	{
 		this.dom = document.createElement("span");
 		this.dom.className = "robot";
+		this.direction = Utils.right;
 		Grid.dom.appendChild(this.dom);
 	}
 
@@ -39,7 +40,13 @@ function Robot()
 
 	this.move_forward = function()
 	{
-
+		if (this.direction == Utils.Right)
+		{
+			if (this.posx < Grid.width - 1)
+			{
+				this.set_x(this.posx + 1);
+			}
+		}
 	}
 
 	this.destroy = function()
